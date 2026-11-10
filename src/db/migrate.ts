@@ -8,7 +8,7 @@ dotenv.config();
 async function migrate() {
   const migrationPath = path.join(
     __dirname,
-    "../migrations/001_create_products_table.sql"
+    "../migrations/001_create_products_table.sql",
   );
 
   const sql = fs.readFileSync(migrationPath, "utf-8");
@@ -25,3 +25,4 @@ async function migrate() {
 }
 
 migrate();
+// test commit
